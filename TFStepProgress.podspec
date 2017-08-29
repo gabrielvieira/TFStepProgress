@@ -30,8 +30,8 @@ Just another awesome progress step view to save your life
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'TFStepProgress/Classes/**/*'
-  
+  s.source_files = 'TFStepProgress/Classes/**'
+
   # s.resource_bundles = {
   #   'TFStepProgress' => ['TFStepProgress/Assets/*.png']
   # }
