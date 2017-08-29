@@ -23,6 +23,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func next(_ sender: Any) {
+        self.step?.setStep(direction: .next)
+    }
+    @IBAction func back(_ sender: Any) {
+         self.step?.setStep(direction: .back)
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

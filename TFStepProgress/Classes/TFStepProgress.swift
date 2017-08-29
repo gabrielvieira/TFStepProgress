@@ -54,7 +54,7 @@ public class TFStepProgress: UIView {
         self.stepItems.last?.hideRightBar()
     }
     
-    func setStep(direction: TFStepProgressDirection) {
+    public func setStep(direction: TFStepProgressDirection) {
         
         if lockAnimation { return }
         
@@ -95,7 +95,7 @@ public class TFStepProgress: UIView {
         print(_currentIndex)
     }
     
-    func setStep(index: Int) {
+    public func setStep(index: Int) {
         
         if index < 0 || index > self.stepItems.count - 1 {
             return
@@ -109,7 +109,7 @@ public class TFStepProgress: UIView {
         }
     }
     
-    func clearAllSteps () {
+    public func clearAllSteps () {
         for num in 0...self.stepItems.count - 1 {
             let stepItem = self.stepItems[num]
             stepItem.setState(animationDuration: self.noneAnimationDuration, state: false, completionHandler: nil)
