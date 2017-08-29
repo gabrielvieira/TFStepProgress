@@ -1,0 +1,10 @@
+framework module TFStepProgress {
+  umbrella header "TFStepProgress-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module TFStepProgress.Swift {
+    header "TFStepProgress-Swift.h"
+}

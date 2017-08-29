@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TFStepProgress_Example' do
+  pod 'TFStepProgress', :path => '../'
+
+  target 'TFStepProgress_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

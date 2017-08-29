@@ -1,0 +1,16 @@
+PODS:
+  - TFStepProgress (0.1.0)
+
+DEPENDENCIES:
+  - TFStepProgress (from `../`)
+
+EXTERNAL SOURCES:
+  TFStepProgress:
+    :path: ../
+
+SPEC CHECKSUMS:
+  TFStepProgress: 7933261d01652d2ae4839753dd8ad7c7d57c17fa
+
+PODFILE CHECKSUM: f4c5cc3254d35dd72ee350441e38451d6293810e
+
+COCOAPODS: 1.2.1

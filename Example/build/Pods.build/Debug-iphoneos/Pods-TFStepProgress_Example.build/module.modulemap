@@ -1,0 +1,10 @@
+framework module Pods_TFStepProgress_Example {
+  umbrella header "Pods-TFStepProgress_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module Pods_TFStepProgress_Example.Swift {
+    header "Pods_TFStepProgress_Example-Swift.h"
+}
