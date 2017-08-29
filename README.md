@@ -22,7 +22,7 @@ pod "TFStepProgress"
 
 ## Author
 
-gabrielvieira, Gabriel.Tomaz@btgpactual.com
+gabrielvieira, viera_frifri@hotmail.com
 
 ## License
 
