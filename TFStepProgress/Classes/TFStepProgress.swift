@@ -34,14 +34,13 @@ public class TFStepProgress: UIView {
     }
 
     //TODO DEIXAR BONITO
-    public func setupItems(items: [String]) {
+    public func setupItems(items: [TFStepItemViewConfig]) {
         
         for (index,item) in items.enumerated() {
             
             let xPos = 0 + CGFloat(index) * (self.frame.width / CGFloat(items.count) )
             let step = TFStepItemView(frame: CGRect(x: xPos, y: 0, width: self.frame.width / CGFloat(items.count), height: self.frame.height))
-            step.setTitle(item)
-            step.setNumber(index + 1)
+            step.configure(config: item)
             self.stepItems.append(step)
             self.addSubview(step)
         }
@@ -91,8 +90,6 @@ public class TFStepProgress: UIView {
                 self.lockAnimation = false
             }
         }
-        
-        print(_currentIndex)
     }
     
     public func setStep(index: Int) {

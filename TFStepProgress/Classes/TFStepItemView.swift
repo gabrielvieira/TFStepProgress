@@ -8,6 +8,26 @@
 
 import UIKit
 
+public struct TFStepItemViewConfig {
+    
+    var leftBarColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
+    var rightBarColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
+    var circleColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
+    var disabledColor = UIColor(red:0.75, green:0.75, blue:0.75, alpha:1.0)
+    var title: String = ""
+    var number: Int = 0
+    
+    init(leftBarColor: UIColor, rightBarColor: UIColor, circleColor: UIColor, disabledColor: UIColor, title: String?, number: Int) {
+        
+        self.leftBarColor = leftBarColor
+        self.rightBarColor = rightBarColor
+        self.circleColor = circleColor
+        self.disabledColor = disabledColor
+        self.title = title ?? ""
+        self.number = number
+    }
+}
+
 class TFStepItemView: UIView {
 
     @IBOutlet private var contentView: UIView!
@@ -17,8 +37,10 @@ class TFStepItemView: UIView {
     @IBOutlet private weak var leftLineView: UIView!
     @IBOutlet private weak var rightLineView: UIView!
    
+    private var leftBarColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
+    private var rightBarColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
     private var disabledColor = UIColor(red:0.75, green:0.75, blue:0.75, alpha:1.0)
-    private var activeColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
+    private var circleColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
     private var circleBorder: CGFloat = 2.0
     
     // MARK: - Initializers
@@ -51,6 +73,58 @@ class TFStepItemView: UIView {
         return view
     }
     
+    // MARK: - Config
+    func configure(config: TFStepItemViewConfig) {
+        
+        self.leftBarColor = config.leftBarColor
+        self.rightBarColor = config.rightBarColor
+        self.circleColor = config.circleColor
+        self.disabledColor = config.disabledColor
+        self.setTitle(config.title)
+        self.setNumber(config.number)
+    }
+    
+    private func setActive(animationDuration: Double, completionHandler:@escaping () -> ()) {
+        
+        let leftAnimate = UIView(frame: self.leftLineView.frame)
+        leftAnimate.frame.size.width = 0
+        leftAnimate.backgroundColor = self.leftBarColor
+        if !self.leftLineView.isHidden { self.addSubview(leftAnimate) }
+        
+        UIView.animate(withDuration: animationDuration, animations: {
+            leftAnimate.frame.size.width = self.leftLineView.frame.width
+        }, completion: { (finished: Bool) in
+            
+            self.leftLineView.backgroundColor = self.leftBarColor
+            leftAnimate.removeFromSuperview()
+            
+            UIView.animate(withDuration: animationDuration, animations: {
+                
+                self.circleView.backgroundColor = self.circleColor
+                self.circleView.layer.borderColor = self.circleColor.cgColor
+                self.titleLabel.textColor = self.circleColor
+                self.numberLabel.textColor = .white
+                
+            }, completion: { (finished: Bool) in
+                
+                let rightAnimate = UIView(frame: self.rightLineView.frame)
+                rightAnimate.frame.size.width = 0
+                rightAnimate.backgroundColor = self.rightBarColor
+                if !self.rightLineView.isHidden { self.addSubview(rightAnimate) }
+                
+                UIView.animate(withDuration: animationDuration, animations: {
+                    rightAnimate.frame.size.width = self.rightLineView.frame.width
+                }, completion: { (finished: Bool) in
+                    
+                    self.rightLineView.backgroundColor = self.rightBarColor
+                    rightAnimate.removeFromSuperview()
+                    completionHandler()
+                })
+            })
+        })
+        
+    }
+    
     private func setDisabled(animationDuration: Double, completionHandler:@escaping () -> ()) {
         
         UIView.animate(withDuration: animationDuration, animations: {
@@ -65,55 +139,15 @@ class TFStepItemView: UIView {
         })
     }
     
-    private func setActive(animationDuration: Double, completionHandler:@escaping () -> ()) {
-        
-        let leftAnimate = UIView(frame: self.leftLineView.frame)
-        leftAnimate.frame.size.width = 0
-        leftAnimate.backgroundColor = self.activeColor
-        if !self.leftLineView.isHidden { self.addSubview(leftAnimate) }
-        
-        UIView.animate(withDuration: animationDuration, animations: {
-            leftAnimate.frame.size.width = self.leftLineView.frame.width
-        }, completion: { (finished: Bool) in
-            
-            self.leftLineView.backgroundColor = self.activeColor
-            leftAnimate.removeFromSuperview()
-            
-            UIView.animate(withDuration: animationDuration, animations: {
-                
-                self.circleView.backgroundColor = self.activeColor
-                self.circleView.layer.borderColor = self.activeColor.cgColor
-                self.titleLabel.textColor = self.activeColor
-                self.numberLabel.textColor = .white
-                
-            }, completion: { (finished: Bool) in
-                
-                let rightAnimate = UIView(frame: self.rightLineView.frame)
-                rightAnimate.frame.size.width = 0
-                rightAnimate.backgroundColor = self.activeColor
-                if !self.rightLineView.isHidden { self.addSubview(rightAnimate) }
-                
-                UIView.animate(withDuration: animationDuration, animations: {
-                    rightAnimate.frame.size.width = self.rightLineView.frame.width
-                }, completion: { (finished: Bool) in
-                    
-                    self.rightLineView.backgroundColor = self.activeColor
-                    rightAnimate.removeFromSuperview()
-                    completionHandler()
-                })
-            })
-        })
-        
-    }
-
-    func setTitle(_ title: String) {
+    private func setTitle(_ title: String) {
         self.titleLabel.text = title
     }
     
-    func setNumber(_ number: Int) {
+    private func setNumber(_ number: Int) {
         self.numberLabel.text = "\(number)"
     }
     
+    // MARK: - Public metods
     func setState(animationDuration: Double, state: Bool, completionHandler: (()->())? ) {
         
         if state {
