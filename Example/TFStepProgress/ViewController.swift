@@ -18,7 +18,11 @@ class ViewController: UIViewController {
         
         self.step = TFStepProgress(frame: CGRect(x: 0, y: 100, width: view.frame.width * 0.75, height: view.frame.height * 0.2))
         self.step?.center.x = self.view.center.x
-        self.step?.setupItems(items: ["Solicitação", "Assinar Termos", "Confirmação", "Conclusão"])
+        
+        let item1 = TFStepItemConfig.init(colorConfig: TFStepItemColorConfig(), title: "Solicitação", number: 0)
+        let item2 = TFStepItemConfig.init(colorConfig: TFStepItemColorConfig(), title: "Aprovação", number: 1)
+        let item3 = TFStepItemConfig.init(colorConfig: TFStepItemColorConfig(), title: "Conclusão", number: 2)
+        self.step?.setupItems(items: [item1,item2,item3])
         self.view.addSubview(self.step!)
         // Do any additional setup after loading the view, typically from a nib.
     }

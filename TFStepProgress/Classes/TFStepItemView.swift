@@ -8,21 +8,33 @@
 
 import UIKit
 
-public struct TFStepItemViewConfig {
+public struct TFStepItemColorConfig {
     
     var leftBarColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
     var rightBarColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
     var circleColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
     var disabledColor = UIColor(red:0.75, green:0.75, blue:0.75, alpha:1.0)
-    var title: String = ""
-    var number: Int = 0
     
-    init(leftBarColor: UIColor, rightBarColor: UIColor, circleColor: UIColor, disabledColor: UIColor, title: String?, number: Int) {
+    public init(){}
+    
+    public init(leftBarColor: UIColor, rightBarColor: UIColor, circleColor: UIColor, disabledColor: UIColor) {
         
         self.leftBarColor = leftBarColor
         self.rightBarColor = rightBarColor
         self.circleColor = circleColor
         self.disabledColor = disabledColor
+    }
+}
+
+public struct TFStepItemConfig {
+    
+    var colorConfig = TFStepItemColorConfig()
+    var title: String = ""
+    var number: Int = 0
+    
+    public init(colorConfig: TFStepItemColorConfig, title: String?, number: Int) {
+        
+        self.colorConfig = colorConfig
         self.title = title ?? ""
         self.number = number
     }
@@ -74,12 +86,12 @@ class TFStepItemView: UIView {
     }
     
     // MARK: - Config
-    func configure(config: TFStepItemViewConfig) {
+    func configure(config: TFStepItemConfig) {
         
-        self.leftBarColor = config.leftBarColor
-        self.rightBarColor = config.rightBarColor
-        self.circleColor = config.circleColor
-        self.disabledColor = config.disabledColor
+        self.leftBarColor = config.colorConfig.leftBarColor
+        self.rightBarColor = config.colorConfig.rightBarColor
+        self.circleColor = config.colorConfig.circleColor
+        self.disabledColor = config.colorConfig.disabledColor
         self.setTitle(config.title)
         self.setNumber(config.number)
     }

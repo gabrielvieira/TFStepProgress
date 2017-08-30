@@ -34,7 +34,7 @@ public class TFStepProgress: UIView {
     }
 
     //TODO DEIXAR BONITO
-    public func setupItems(items: [TFStepItemViewConfig]) {
+    public func setupItems(items: [TFStepItemConfig]) {
         
         for (index,item) in items.enumerated() {
             
