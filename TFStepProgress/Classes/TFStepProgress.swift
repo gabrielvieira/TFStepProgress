@@ -21,7 +21,7 @@ public class TFStepProgress: UIView {
     private var defaultAnimationDuration = 0.5
     private var noneAnimationDuration = 0.0
     
-    var currentIndex: Int {
+    public var currentIndex: Int {
         return _currentIndex
     }
     
