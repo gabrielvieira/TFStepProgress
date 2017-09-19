@@ -15,8 +15,8 @@
 		6F4937839D7A7C392AE7395944582118 /* Pods-TFStepProgress_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96CE24D5972C125A07D027406FCAB71A /* Pods-TFStepProgress_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79C04DB970CD3FA5C9C82538CEE4B7DE /* TFStepProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D3D98EE9D35BC2D5BFF07CC0BF64D2 /* TFStepProgress-dummy.m */; };
 		9310646D12DCB8B2CC2BD88793792233 /* TFStepProgress.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C380839D242728B1E5C8CD725F913A2B /* TFStepProgress.bundle */; };
-		A31DC3A91F71A133008E49D1 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1616135C35FB00AAED3BBBE7D0B7CC77 /* images.xcassets */; };
-		A3FCE3D31F71AF96000F12BA /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FCE3D21F71AF95000F12BA /* Extension.swift */; };
+		A3FCE3D51F71B52E000F12BA /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1616135C35FB00AAED3BBBE7D0B7CC77 /* images.xcassets */; };
+		A3FCE3D61F71B54A000F12BA /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FCE3D21F71AF95000F12BA /* Extension.swift */; };
 		A9F93046985401B203C49BA1FF0A8DAA /* TFStepProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97570C0984A26132A0B5ECCB8A9955EA /* TFStepProgress.swift */; };
 		AD48340006272A4495D3D616DB7DC6DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		DE7A25D4D8640C938BF3C5DA36B40D36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -386,7 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9310646D12DCB8B2CC2BD88793792233 /* TFStepProgress.bundle in Resources */,
-				A31DC3A91F71A133008E49D1 /* images.xcassets in Resources */,
+				A3FCE3D51F71B52E000F12BA /* images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3FCE3D61F71B54A000F12BA /* Extension.swift in Sources */,
 				E09B59B27CC0B5E7C7E3596EAC815505 /* TFStepItemView.swift in Sources */,
 				F921EF687F0166B89756DB50B2FA9EE8 /* TFStepItemView.xib in Sources */,
 				79C04DB970CD3FA5C9C82538CEE4B7DE /* TFStepProgress-dummy.m in Sources */,
@@ -424,7 +425,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DF53F51C02E6EEE5DC0EF7A49FA061A /* Pods-TFStepProgress_Example-dummy.m in Sources */,
-				A3FCE3D31F71AF96000F12BA /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
