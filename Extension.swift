@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 internal extension Bundle {
     class func frameworkBundle() -> Bundle {
