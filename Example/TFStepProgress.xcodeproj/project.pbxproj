@@ -30,7 +30,6 @@
 /* Begin PBXFileReference section */
 		0CBE56FA06D102E75A7B6CF8 /* Pods_TFStepProgress_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFStepProgress_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10601129859810A7713E214B /* Pods-TFStepProgress_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFStepProgress_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TFStepProgress_Tests/Pods-TFStepProgress_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		13B42EF2C8A483DCA3A53239 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		23C47C8C6D72651A8501394E /* Pods-TFStepProgress_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFStepProgress_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TFStepProgress_Example/Pods-TFStepProgress_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3FBFB93C7BA79F4B6C1C823A /* Pods-TFStepProgress_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFStepProgress_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TFStepProgress_Example/Pods-TFStepProgress_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TFStepProgress_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFStepProgress_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,8 +44,6 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7E30D1C60D2A47A833C4B9AB /* Pods_TFStepProgress_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFStepProgress_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8345D3105AC43AC8FEFB389B /* Pods-TFStepProgress_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFStepProgress_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TFStepProgress_Tests/Pods-TFStepProgress_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AFC8113CA3A4B2344E7A53A0 /* TFStepProgress.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TFStepProgress.podspec; path = ../TFStepProgress.podspec; sourceTree = "<group>"; };
-		E45F4FA3B30504C0A3216D1B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +69,6 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for TFStepProgress */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -127,16 +123,6 @@
 				607FACEA1AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
-			isa = PBXGroup;
-			children = (
-				AFC8113CA3A4B2344E7A53A0 /* TFStepProgress.podspec */,
-				E45F4FA3B30504C0A3216D1B /* README.md */,
-				13B42EF2C8A483DCA3A53239 /* LICENSE */,
-			);
-			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
 		9116CBD399C6EAE21D75A2B4 /* Pods */ = {

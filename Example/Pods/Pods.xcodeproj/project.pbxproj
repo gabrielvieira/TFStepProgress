@@ -15,8 +15,8 @@
 		6F4937839D7A7C392AE7395944582118 /* Pods-TFStepProgress_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96CE24D5972C125A07D027406FCAB71A /* Pods-TFStepProgress_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79C04DB970CD3FA5C9C82538CEE4B7DE /* TFStepProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D3D98EE9D35BC2D5BFF07CC0BF64D2 /* TFStepProgress-dummy.m */; };
 		9310646D12DCB8B2CC2BD88793792233 /* TFStepProgress.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C380839D242728B1E5C8CD725F913A2B /* TFStepProgress.bundle */; };
-		A31DC3A81F71A0B1008E49D1 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31DC3A71F71A0B1008E49D1 /* Extension.swift */; };
 		A31DC3A91F71A133008E49D1 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1616135C35FB00AAED3BBBE7D0B7CC77 /* images.xcassets */; };
+		A3FCE3D31F71AF96000F12BA /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FCE3D21F71AF95000F12BA /* Extension.swift */; };
 		A9F93046985401B203C49BA1FF0A8DAA /* TFStepProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97570C0984A26132A0B5ECCB8A9955EA /* TFStepProgress.swift */; };
 		AD48340006272A4495D3D616DB7DC6DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		DE7A25D4D8640C938BF3C5DA36B40D36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -64,7 +64,7 @@
 		9C731F601EBAC703EA4FDB08AC703727 /* Pods-TFStepProgress_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TFStepProgress_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9CF85EF891BDC07892117466DB419881 /* Pods-TFStepProgress_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFStepProgress_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9F6DAD2EDAE8394F67607BC25B319F8C /* Pods_TFStepProgress_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFStepProgress_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A31DC3A71F71A0B1008E49D1 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		A3FCE3D21F71AF95000F12BA /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = TFStepProgress/Classes/Extension.swift; sourceTree = "<group>"; };
 		A84170DBE31F362ACDEB3CEC78C71CD0 /* Pods-TFStepProgress_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TFStepProgress_Tests-dummy.m"; sourceTree = "<group>"; };
 		B109B550A4304D97AF8F211940F8EE8C /* Pods-TFStepProgress_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TFStepProgress_Tests-resources.sh"; sourceTree = "<group>"; };
 		BCCAA0B53DEA830E553BA70113B8779B /* Pods-TFStepProgress_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TFStepProgress_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -226,10 +226,10 @@
 		CC89A26F19C9F511A6B00DCFACD935E9 /* TFStepProgress */ = {
 			isa = PBXGroup;
 			children = (
+				A3FCE3D21F71AF95000F12BA /* Extension.swift */,
 				4787BCACF53754210FCD362C5CA4EA8C /* TFStepItemView.swift */,
 				DF7ADE670CF86F50871793A0BDAC934A /* TFStepItemView.xib */,
 				97570C0984A26132A0B5ECCB8A9955EA /* TFStepProgress.swift */,
-				A31DC3A71F71A0B1008E49D1 /* Extension.swift */,
 				A4C2E8CDE2EF0C1EA9EB644E10D102BC /* Resources */,
 				C39A62F5B3A7FBAE3EC05EE1EA9050B2 /* Support Files */,
 			);
@@ -354,6 +354,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					C3FC8169ED8D372B45296786529A6FB8 = {
+						LastSwiftMigration = 0830;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -399,7 +404,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A31DC3A81F71A0B1008E49D1 /* Extension.swift in Sources */,
 				E09B59B27CC0B5E7C7E3596EAC815505 /* TFStepItemView.swift in Sources */,
 				F921EF687F0166B89756DB50B2FA9EE8 /* TFStepItemView.xib in Sources */,
 				79C04DB970CD3FA5C9C82538CEE4B7DE /* TFStepProgress-dummy.m in Sources */,
@@ -420,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DF53F51C02E6EEE5DC0EF7A49FA061A /* Pods-TFStepProgress_Example-dummy.m in Sources */,
+				A3FCE3D31F71AF96000F12BA /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +589,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 800B5A6F2A6FE6B4B5DB391863100B87 /* Pods-TFStepProgress_Example.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -622,6 +628,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9CF85EF891BDC07892117466DB419881 /* Pods-TFStepProgress_Example.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
