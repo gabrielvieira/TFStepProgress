@@ -77,31 +77,25 @@ public class TFStepProgress: UIView {
             
             if _currentIndex == self.stepItems.count {
                 _currentIndex = self.stepItems.count - 1
+                self.lockAnimation = false
                 return
             }
             
             let stepItem = self.stepItems[_currentIndex]
-            var prev = self.stepItems[self._currentIndex - 1]
+            let prev = self.stepItems[self._currentIndex - 1]
             
             if currentIndex == self.stepItems.count - 1 {
                 
-                stepItem.setActive(animationDuration: self.defaultAnimationDuration, firstAnimation: {
-                    
-
-                }, completionHandler: {
+                stepItem.setActive(animationDuration: self.defaultAnimationDuration, firstAnimation: {}, completionHandler: {
                     stepItem.setComplete(animationDuration: self.defaultAnimationDuration, completionHandler: {
                         self.lockAnimation = false
                     })
-                    
-                   
                 })
             }
             
             stepItem.setActive(animationDuration: self.defaultAnimationDuration, firstAnimation: {
                 
-                prev.setComplete(animationDuration: self.defaultAnimationDuration, completionHandler: {
-                    print("complete")
-                })
+                prev.setComplete(animationDuration: self.defaultAnimationDuration, completionHandler:  {})
             }, completionHandler: {
                 self.lockAnimation = false
             })
