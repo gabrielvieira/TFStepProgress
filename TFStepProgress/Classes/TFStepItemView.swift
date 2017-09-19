@@ -7,22 +7,24 @@
 //
 
 import UIKit
-
+//166 206 57
 public struct TFStepItemColorConfig {
     
     var leftBarColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
     var rightBarColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
-    var circleColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
+    var enableColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
+    var completeColor = UIColor(red:0.65, green:0.81, blue:0.22, alpha:1.0)
     var disabledColor = UIColor(red:0.75, green:0.75, blue:0.75, alpha:1.0)
     
     public init(){}
     
-    public init(leftBarColor: UIColor, rightBarColor: UIColor, circleColor: UIColor, disabledColor: UIColor) {
+    public init(leftBarColor: UIColor, rightBarColor: UIColor, enableColor: UIColor, disabledColor: UIColor,completeColor: UIColor) {
         
         self.leftBarColor = leftBarColor
         self.rightBarColor = rightBarColor
-        self.circleColor = circleColor
+        self.enableColor = enableColor
         self.disabledColor = disabledColor
+        self.completeColor = completeColor
     }
 }
 
@@ -42,6 +44,7 @@ public struct TFStepItemConfig {
 
 class TFStepItemView: UIView {
 
+    @IBOutlet weak var checkIcon: UIImageView!
     @IBOutlet private var contentView: UIView!
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var circleView: UIView!
@@ -49,10 +52,11 @@ class TFStepItemView: UIView {
     @IBOutlet private weak var leftLineView: UIView!
     @IBOutlet private weak var rightLineView: UIView!
    
-    private var leftBarColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
+    private var leftBarColor = UIColor(red:0.65, green:0.81, blue:0.22, alpha:1.0)
     private var rightBarColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
+    private var enableColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
+    private var completeColor = UIColor(red:0.65, green:0.81, blue:0.22, alpha:1.0)
     private var disabledColor = UIColor(red:0.75, green:0.75, blue:0.75, alpha:1.0)
-    private var circleColor = UIColor(red:0.00, green:0.56, blue:0.83, alpha:1.0)
     private var circleBorder: CGFloat = 2.0
     
     // MARK: - Initializers
@@ -76,6 +80,9 @@ class TFStepItemView: UIView {
         self.circleView.layer.borderWidth = circleBorder
         addSubview(view)
         setDisabled(animationDuration: 0) {}
+        self.checkIcon.image = UIImage(readerImageNamed: "check_icon")
+        self.checkIcon.isHidden = true
+        self.numberLabel.isHidden = false
     }
     
     fileprivate func viewFromNibForClass() -> UIView {
@@ -90,14 +97,17 @@ class TFStepItemView: UIView {
         
         self.leftBarColor = config.colorConfig.leftBarColor
         self.rightBarColor = config.colorConfig.rightBarColor
-        self.circleColor = config.colorConfig.circleColor
+        self.enableColor = config.colorConfig.enableColor
         self.disabledColor = config.colorConfig.disabledColor
         self.setTitle(config.title)
         self.setNumber(config.number)
     }
     
-    private func setActive(animationDuration: Double, completionHandler:@escaping () -> ()) {
+    func setActive(animationDuration: Double, firstAnimation:@escaping () -> (), completionHandler:@escaping () -> ()) {
         
+        
+        self.checkIcon.isHidden = true
+        self.numberLabel.isHidden = false
         let leftAnimate = UIView(frame: self.leftLineView.frame)
         leftAnimate.frame.size.width = 0
         leftAnimate.backgroundColor = self.leftBarColor
@@ -106,15 +116,15 @@ class TFStepItemView: UIView {
         UIView.animate(withDuration: animationDuration, animations: {
             leftAnimate.frame.size.width = self.leftLineView.frame.width
         }, completion: { (finished: Bool) in
-            
+            firstAnimation()
             self.leftLineView.backgroundColor = self.leftBarColor
             leftAnimate.removeFromSuperview()
             
             UIView.animate(withDuration: animationDuration, animations: {
                 
-                self.circleView.backgroundColor = self.circleColor
-                self.circleView.layer.borderColor = self.circleColor.cgColor
-                self.titleLabel.textColor = self.circleColor
+                self.circleView.backgroundColor = self.enableColor
+                self.circleView.layer.borderColor = self.enableColor.cgColor
+                self.titleLabel.textColor = self.enableColor
                 self.numberLabel.textColor = .white
                 
             }, completion: { (finished: Bool) in
@@ -137,7 +147,10 @@ class TFStepItemView: UIView {
         
     }
     
-    private func setDisabled(animationDuration: Double, completionHandler:@escaping () -> ()) {
+    func setDisabled(animationDuration: Double, completionHandler:@escaping () -> ()) {
+        
+        self.checkIcon.isHidden = true
+        self.numberLabel.isHidden = false
         
         UIView.animate(withDuration: animationDuration, animations: {
             self.circleView.backgroundColor = .white
@@ -151,26 +164,28 @@ class TFStepItemView: UIView {
         })
     }
     
+    func setComplete(animationDuration: Double, completionHandler:@escaping () -> ()) {
+        
+        UIView.animate(withDuration: animationDuration, animations: {
+            self.circleView.backgroundColor = self.completeColor
+            self.circleView.layer.borderColor = self.completeColor.cgColor
+            self.numberLabel.textColor = self.completeColor
+            self.titleLabel.textColor = self.completeColor
+            self.leftLineView.backgroundColor = self.completeColor
+            self.rightLineView.backgroundColor = self.completeColor
+            self.checkIcon.isHidden = false
+            self.numberLabel.isHidden = true
+        }, completion: { (finished: Bool) in
+            completionHandler()
+        })
+    }
+    
     private func setTitle(_ title: String) {
         self.titleLabel.text = title
     }
     
     private func setNumber(_ number: Int) {
         self.numberLabel.text = "\(number)"
-    }
-    
-    // MARK: - Public metods
-    func setState(animationDuration: Double, state: Bool, completionHandler: (()->())? ) {
-        
-        if state {
-            setActive(animationDuration: animationDuration, completionHandler: { 
-                completionHandler?()
-            })
-        } else {
-            self.setDisabled(animationDuration: animationDuration, completionHandler: { 
-                completionHandler?()
-            })
-        }
     }
     
     func hideLeftBar() {

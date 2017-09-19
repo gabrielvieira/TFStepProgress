@@ -1,15 +1,15 @@
 {
   "name": "TFStepProgress",
   "version": "0.1.0",
-  "summary": "A short description of TFStepProgress.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Just another progress step view",
+  "description": "Just another awesome progress step view to save your life",
   "homepage": "https://github.com/gabrielvieira/TFStepProgress",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "gabrielvieira": "Gabriel.Tomaz@btgpactual.com"
+    "gabrielvieira": "viera_frifri@hotmail.com"
   },
   "source": {
     "git": "https://github.com/gabrielvieira/TFStepProgress.git",
@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "TFStepProgress/Classes/**/*"
+  "source_files": "TFStepProgress/Classes/**",
+  "resource_bundles": {
+    "TFStepProgress": [
+      "TFStepProgress/Assets/*"
+    ]
+  }
 }

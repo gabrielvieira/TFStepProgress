@@ -8,6 +8,18 @@
 
 import UIKit
 
+extension UIImage {
+    
+    public class func bundledImage(named: String) -> UIImage? {
+        let image = UIImage(named: named)
+        if image == nil {
+            
+            return UIImage(named: named, in: Bundle.init(for: TFStepProgress.classForCoder()), compatibleWith: nil)
+        } // Replace MyBasePodClass with yours
+        return image
+    }
+}
+
 public enum TFStepProgressDirection {
     case next
     case back
@@ -46,10 +58,10 @@ public class TFStepProgress: UIView {
         }
         self.stepItems.first?.hideLeftBar()
         self.lockAnimation = true
-        self.stepItems.first?.setState(animationDuration: self.defaultAnimationDuration, state:true) {
-            self.lockAnimation = false
-        }
         
+        self.stepItems.first?.setActive(animationDuration: self.defaultAnimationDuration, firstAnimation: {}, completionHandler: {
+             self.lockAnimation = false
+        })
         self.stepItems.last?.hideRightBar()
     }
     
@@ -59,16 +71,38 @@ public class TFStepProgress: UIView {
         
         lockAnimation = true
         
-        
         if direction == .next {
             
             _currentIndex += 1
+            
             if _currentIndex == self.stepItems.count {
                 _currentIndex = self.stepItems.count - 1
+                return
             }
             
             let stepItem = self.stepItems[_currentIndex]
-            stepItem.setState(animationDuration: self.defaultAnimationDuration, state: true, completionHandler: {
+            var prev = self.stepItems[self._currentIndex - 1]
+            
+            if currentIndex == self.stepItems.count - 1 {
+                
+                stepItem.setActive(animationDuration: self.defaultAnimationDuration, firstAnimation: {
+                    
+
+                }, completionHandler: {
+                    stepItem.setComplete(animationDuration: self.defaultAnimationDuration, completionHandler: {
+                        self.lockAnimation = false
+                    })
+                    
+                   
+                })
+            }
+            
+            stepItem.setActive(animationDuration: self.defaultAnimationDuration, firstAnimation: {
+                
+                prev.setComplete(animationDuration: self.defaultAnimationDuration, completionHandler: {
+                    print("complete")
+                })
+            }, completionHandler: {
                 self.lockAnimation = false
             })
             
@@ -76,10 +110,23 @@ public class TFStepProgress: UIView {
             let stepItem = self.stepItems[_currentIndex]
             
             if _currentIndex > 0 {
-                stepItem.setState(animationDuration: self.defaultAnimationDuration, state: false, completionHandler: {
+                
+                stepItem.setDisabled(animationDuration: self.defaultAnimationDuration, completionHandler: { 
                     self.lockAnimation = false
                 })
+                
                 _currentIndex -= 1
+                
+                let prev = self.stepItems[_currentIndex]
+                prev.setActive(animationDuration: self.noneAnimationDuration, firstAnimation: {}, completionHandler: {
+                    self.lockAnimation = false
+                })
+                
+            }
+            else{
+                stepItem.setActive(animationDuration: self.noneAnimationDuration, firstAnimation: {}, completionHandler: {
+                    self.lockAnimation = false
+                })
             }
             
             if _currentIndex < 0 {
@@ -102,14 +149,14 @@ public class TFStepProgress: UIView {
         
         for num in 0...index {
             let stepItem = self.stepItems[num]
-            stepItem.setState(animationDuration: self.noneAnimationDuration, state: true, completionHandler: nil)
+            stepItem.setActive(animationDuration: self.noneAnimationDuration, firstAnimation: {}, completionHandler: {})
         }
     }
     
     public func clearAllSteps () {
         for num in 0...self.stepItems.count - 1 {
             let stepItem = self.stepItems[num]
-            stepItem.setState(animationDuration: self.noneAnimationDuration, state: false, completionHandler: nil)
+            stepItem.setDisabled(animationDuration: self.noneAnimationDuration, completionHandler: {})
         }
     }
     

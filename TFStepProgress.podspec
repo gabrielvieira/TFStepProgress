@@ -32,9 +32,9 @@ Just another awesome progress step view to save your life
 
   s.source_files = 'TFStepProgress/Classes/**'
 
-  # s.resource_bundles = {
-  #   'TFStepProgress' => ['TFStepProgress/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'TFStepProgress' => ['TFStepProgress/Assets/*']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

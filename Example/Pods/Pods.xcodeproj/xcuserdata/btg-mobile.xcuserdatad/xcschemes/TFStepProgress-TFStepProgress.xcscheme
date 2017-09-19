@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '37E50F1DC76D51135C846178D0FC479E'
-               BlueprintName = 'TFStepProgress'
+               BlueprintIdentifier = 'C38E8DF4D774C0B0CD568BA2B7C277B3'
+               BlueprintName = 'TFStepProgress-TFStepProgress'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'TFStepProgress.framework'>
+               BuildableName = 'TFStepProgress.bundle'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
