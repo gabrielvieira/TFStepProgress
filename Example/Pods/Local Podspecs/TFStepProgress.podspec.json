@@ -19,9 +19,7 @@
     "ios": "8.0"
   },
   "source_files": "TFStepProgress/Classes/**",
-  "resource_bundles": {
-    "TFStepProgress": [
-      "TFStepProgress/Assets/*"
-    ]
-  }
+  "resources": [
+    "TFStepProgress/Assets/*"
+  ]
 }
