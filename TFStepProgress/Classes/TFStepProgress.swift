@@ -52,7 +52,8 @@ public class TFStepProgress: UIView {
             
             let xPos = 0 + CGFloat(index) * (self.frame.width / CGFloat(items.count) )
             let step = TFStepItemView(frame: CGRect(x: xPos, y: 0, width: self.frame.width / CGFloat(items.count), height: self.frame.height))
-            step.configure(config: item)
+            let fontSize = self.calculateFontSize(items: items, maxHeight: step.titleHeight)
+            step.configure(config: item, fontSize: CGFloat(fontSize))
             self.stepItems.append(step)
             self.addSubview(step)
         }
@@ -154,5 +155,20 @@ public class TFStepProgress: UIView {
         }
     }
     
-
+    public func calculateFontSize(items: [TFStepItemConfig], maxHeight:CGFloat) -> CGFloat {
+        
+        var fontSize = 0.0
+        var continueSearch = true
+        var x = 100
+        while continueSearch {
+            let sum = items.flatMap {$0.title.count}.reduce(0, +)
+            if (sum * x) > (Int(self.frame.width * 0.8)/items.count) && x > Int(maxHeight * 0.8) {
+                x-=1
+            } else {
+                fontSize = Double(x)
+                continueSearch = false
+            }
+        }
+        return CGFloat(fontSize)
+    }
 }

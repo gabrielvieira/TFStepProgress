@@ -35,7 +35,6 @@ public struct TFStepItemConfig {
     var number: Int = 0
     
     public init(colorConfig: TFStepItemColorConfig, title: String?, number: Int) {
-        
         self.colorConfig = colorConfig
         self.title = title ?? ""
         self.number = number
@@ -46,7 +45,7 @@ class TFStepItemView: UIView {
 
     @IBOutlet weak var checkIcon: UIImageView!
     @IBOutlet private var contentView: UIView!
-    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet private weak var circleView: UIView!
     @IBOutlet private weak var numberLabel: UILabel!
     @IBOutlet private weak var leftLineView: UIView!
@@ -58,7 +57,13 @@ class TFStepItemView: UIView {
     private var completeColor = UIColor(red:0.65, green:0.81, blue:0.22, alpha:1.0)
     private var disabledColor = UIColor(red:0.75, green:0.75, blue:0.75, alpha:1.0)
     private var circleBorder: CGFloat = 2.0
+    private var fontSize:CGFloat = 1.0
     
+    public var titleHeight : CGFloat {
+        get {
+            return self.titleLabel.frame.height
+        }
+    }
     // MARK: - Initializers
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -93,7 +98,7 @@ class TFStepItemView: UIView {
     }
     
     // MARK: - Config
-    func configure(config: TFStepItemConfig) {
+    func configure(config: TFStepItemConfig, fontSize:CGFloat) {
         
         self.leftBarColor = config.colorConfig.leftBarColor
         self.rightBarColor = config.colorConfig.rightBarColor
@@ -101,10 +106,11 @@ class TFStepItemView: UIView {
         self.disabledColor = config.colorConfig.disabledColor
         self.setTitle(config.title)
         self.setNumber(config.number)
+        self.fontSize = fontSize
+        self.titleLabel.font = self.titleLabel.font.withSize(fontSize)
     }
     
     func setActive(animationDuration: Double, firstAnimation:@escaping () -> (), completionHandler:@escaping () -> ()) {
-        
         
         self.checkIcon.isHidden = true
         self.numberLabel.isHidden = false
