@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F74158E706C4292811AB2E22986D855 /* TFStepProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C17F6350225D0668823ED881C869CA35 /* TFStepProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F74158E706C4292811AB2E22986D855 /* TFStepProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A15EC55A3963D4D581F768BEED05FA14 /* TFStepProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		38715A031432BC2D0E706C34A4492C58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		43D7788E1AF67B3CD122CC93DC498E83 /* Pods-TFStepProgress_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A84170DBE31F362ACDEB3CEC78C71CD0 /* Pods-TFStepProgress_Tests-dummy.m */; };
-		47F3A9E5339FF0772A0D729F5DE9CCFF /* TFStepProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CFBDF581D59E15C93E123CC4EF8C5FA /* TFStepProgress-dummy.m */; };
+		47F3A9E5339FF0772A0D729F5DE9CCFF /* TFStepProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1EC7D1CEA79A71871E66A78F76DD3D /* TFStepProgress-dummy.m */; };
 		61A3D9833DE95F64189856F9E3FEF653 /* Pods-TFStepProgress_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F897D7B8CD98F3B520FA3D8C3C89AAD /* Pods-TFStepProgress_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		64D18D9218195E9107712215FD51B7F4 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413BF210F1867420488F6D0EA1EC2E4 /* Extension.swift */; };
+		64D18D9218195E9107712215FD51B7F4 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B85F5515954169E3B619F4E90C59D4F /* Extension.swift */; };
 		6DF53F51C02E6EEE5DC0EF7A49FA061A /* Pods-TFStepProgress_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF54B7C5EBE2B4EEFB79AC39FAEC611E /* Pods-TFStepProgress_Example-dummy.m */; };
 		6F4937839D7A7C392AE7395944582118 /* Pods-TFStepProgress_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96CE24D5972C125A07D027406FCAB71A /* Pods-TFStepProgress_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD48340006272A4495D3D616DB7DC6DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		B34498957227D56C6738BDE64A05B706 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A5284BEA5A88DB488CF7535DB9025AD /* images.xcassets */; };
-		BAE2C60EFB3FF88EB32C390AB0114E89 /* TFStepItemView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 9D4CAA8444786C5E737AF2D51D0F730E /* TFStepItemView.xib */; };
-		D90A27E0260D619DBCED12B7C099CE87 /* TFStepItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06B91D0BCCD65E757072869787D0AD0 /* TFStepItemView.swift */; };
+		B34498957227D56C6738BDE64A05B706 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8345AD5B3140F9845B2266C3087858F8 /* images.xcassets */; };
+		BAE2C60EFB3FF88EB32C390AB0114E89 /* TFStepItemView.xib in Sources */ = {isa = PBXBuildFile; fileRef = D300E91A5552551F3383454F99D411B3 /* TFStepItemView.xib */; };
+		D90A27E0260D619DBCED12B7C099CE87 /* TFStepItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D1C55152804966662388E955B8BE42 /* TFStepItemView.swift */; };
 		DE7A25D4D8640C938BF3C5DA36B40D36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		F142FAE767272478DC4BF57B1A2BFBF3 /* TFStepProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D80006E9B098FBC10B0382355CFCC39 /* TFStepProgress.swift */; };
+		F142FAE767272478DC4BF57B1A2BFBF3 /* TFStepProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0534829F0BECB775A43AB26E7D934A06 /* TFStepProgress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,39 +34,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0534829F0BECB775A43AB26E7D934A06 /* TFStepProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TFStepProgress.swift; path = TFStepProgress/Classes/TFStepProgress.swift; sourceTree = "<group>"; };
 		0944451D6CA442AFFB72E994AFFB5269 /* Pods-TFStepProgress_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TFStepProgress_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		0A5284BEA5A88DB488CF7535DB9025AD /* images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = TFStepProgress/Assets/images.xcassets; sourceTree = "<group>"; };
-		0B820A2615ACC2BC827780162355B4A8 /* Pods-TFStepProgress_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TFStepProgress_Tests.modulemap"; sourceTree = "<group>"; };
+		0B820A2615ACC2BC827780162355B4A8 /* Pods-TFStepProgress_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TFStepProgress_Tests.modulemap"; sourceTree = "<group>"; };
 		1786D7B4F9CAF20E7738168D945DE5AB /* Pods-TFStepProgress_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TFStepProgress_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2831F0897E550C423F03DF803134AE76 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30AD7A85B3295C82666BE0580FD2976F /* Pods_TFStepProgress_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TFStepProgress_Example.framework; path = "Pods-TFStepProgress_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30AD7A85B3295C82666BE0580FD2976F /* Pods_TFStepProgress_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFStepProgress_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3712108C0A510036A2F64A811DB40B0B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AA4B376D68A2DEF43306F44372FE38A /* Pods-TFStepProgress_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TFStepProgress_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		446DCFB8A4F9063760E417C7542CFACE /* TFStepProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFStepProgress-prefix.pch"; sourceTree = "<group>"; };
-		5DEFD2D4666C21B71D58EE874C322D93 /* Pods_TFStepProgress_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TFStepProgress_Tests.framework; path = "Pods-TFStepProgress_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B85F5515954169E3B619F4E90C59D4F /* Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = TFStepProgress/Classes/Extension.swift; sourceTree = "<group>"; };
+		55F1E721EFA4713EB16681324F75E8D3 /* TFStepProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFStepProgress-prefix.pch"; sourceTree = "<group>"; };
+		5DEFD2D4666C21B71D58EE874C322D93 /* Pods_TFStepProgress_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TFStepProgress_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F897D7B8CD98F3B520FA3D8C3C89AAD /* Pods-TFStepProgress_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TFStepProgress_Tests-umbrella.h"; sourceTree = "<group>"; };
+		65742113F7A28BA0F941F3FF71158714 /* TFStepProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TFStepProgress.xcconfig; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6CFBDF581D59E15C93E123CC4EF8C5FA /* TFStepProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TFStepProgress-dummy.m"; sourceTree = "<group>"; };
-		71E8CA9207105D7C9EC0CAF66AC9288E /* TFStepProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TFStepProgress.modulemap; sourceTree = "<group>"; };
+		6835A63C4710259C271FBB123176B493 /* TFStepProgress.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = TFStepProgress.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6B1EC7D1CEA79A71871E66A78F76DD3D /* TFStepProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TFStepProgress-dummy.m"; sourceTree = "<group>"; };
+		73D1C55152804966662388E955B8BE42 /* TFStepItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TFStepItemView.swift; path = TFStepProgress/Classes/TFStepItemView.swift; sourceTree = "<group>"; };
 		7BE3FC02A8ACFE4017202BCB33F766FD /* Pods-TFStepProgress_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TFStepProgress_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		800B5A6F2A6FE6B4B5DB391863100B87 /* Pods-TFStepProgress_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFStepProgress_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8413BF210F1867420488F6D0EA1EC2E4 /* Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = TFStepProgress/Classes/Extension.swift; sourceTree = "<group>"; };
+		8345AD5B3140F9845B2266C3087858F8 /* images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = images.xcassets; path = TFStepProgress/Assets/images.xcassets; sourceTree = "<group>"; };
 		85A614AF20E6EEA0892D03D0B28C1367 /* Pods-TFStepProgress_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TFStepProgress_Example-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96CE24D5972C125A07D027406FCAB71A /* Pods-TFStepProgress_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TFStepProgress_Example-umbrella.h"; sourceTree = "<group>"; };
 		9C731F601EBAC703EA4FDB08AC703727 /* Pods-TFStepProgress_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TFStepProgress_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9CF85EF891BDC07892117466DB419881 /* Pods-TFStepProgress_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFStepProgress_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9D4CAA8444786C5E737AF2D51D0F730E /* TFStepItemView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TFStepItemView.xib; path = TFStepProgress/Classes/TFStepItemView.xib; sourceTree = "<group>"; };
-		9D80006E9B098FBC10B0382355CFCC39 /* TFStepProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TFStepProgress.swift; path = TFStepProgress/Classes/TFStepProgress.swift; sourceTree = "<group>"; };
+		A15EC55A3963D4D581F768BEED05FA14 /* TFStepProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFStepProgress-umbrella.h"; sourceTree = "<group>"; };
+		A69B6E20A912A1CAFAE4E56B1A299909 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A709C7E9C6894DF63390EFDB63EC3B64 /* TFStepProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TFStepProgress.modulemap; sourceTree = "<group>"; };
 		A84170DBE31F362ACDEB3CEC78C71CD0 /* Pods-TFStepProgress_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TFStepProgress_Tests-dummy.m"; sourceTree = "<group>"; };
-		B06B91D0BCCD65E757072869787D0AD0 /* TFStepItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TFStepItemView.swift; path = TFStepProgress/Classes/TFStepItemView.swift; sourceTree = "<group>"; };
 		B109B550A4304D97AF8F211940F8EE8C /* Pods-TFStepProgress_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TFStepProgress_Tests-resources.sh"; sourceTree = "<group>"; };
-		B6F8884AD1F92A207599DB4B67A5355D /* TFStepProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TFStepProgress.xcconfig; sourceTree = "<group>"; };
 		BCCAA0B53DEA830E553BA70113B8779B /* Pods-TFStepProgress_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TFStepProgress_Example-frameworks.sh"; sourceTree = "<group>"; };
 		BF54B7C5EBE2B4EEFB79AC39FAEC611E /* Pods-TFStepProgress_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TFStepProgress_Example-dummy.m"; sourceTree = "<group>"; };
-		C17F6350225D0668823ED881C869CA35 /* TFStepProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TFStepProgress-umbrella.h"; sourceTree = "<group>"; };
-		C7AA9D478129A45553EBB1E354B9B104 /* TFStepProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TFStepProgress.framework; path = TFStepProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CADA0329A2FF72FB87964D3884506565 /* Pods-TFStepProgress_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TFStepProgress_Example.modulemap"; sourceTree = "<group>"; };
+		C7AA9D478129A45553EBB1E354B9B104 /* TFStepProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TFStepProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CADA0329A2FF72FB87964D3884506565 /* Pods-TFStepProgress_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TFStepProgress_Example.modulemap"; sourceTree = "<group>"; };
 		D0870592F32BBA34A3DAD8A4BFF7833C /* Pods-TFStepProgress_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFStepProgress_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D300E91A5552551F3383454F99D411B3 /* TFStepItemView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = TFStepItemView.xib; path = TFStepProgress/Classes/TFStepItemView.xib; sourceTree = "<group>"; };
+		D336E8CA7419F6BB0A48271605F426CA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		EA84445B3B86E98D8ECB4D469DDB4512 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADADB7AE9FF085B1B4E2AA1A19C1063 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFA6D660A510454EA615028BA6417BBF /* Pods-TFStepProgress_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TFStepProgress_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +121,14 @@
 			path = "Target Support Files/Pods-TFStepProgress_Example";
 			sourceTree = "<group>";
 		};
+		1A2A6FC4A0D21000AFBE5C31FA16FEC1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8345AD5B3140F9845B2266C3087858F8 /* images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		1A633AAFBA3761CDEF2FEAAE6B135ABD /* Pods-TFStepProgress_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +157,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		70A674EC258FE809D939F42EFDBF8C5D /* TFStepProgress */ = {
+			isa = PBXGroup;
+			children = (
+				3B85F5515954169E3B619F4E90C59D4F /* Extension.swift */,
+				73D1C55152804966662388E955B8BE42 /* TFStepItemView.swift */,
+				D300E91A5552551F3383454F99D411B3 /* TFStepItemView.xib */,
+				0534829F0BECB775A43AB26E7D934A06 /* TFStepProgress.swift */,
+				A592577544702BC860E6B90D254EDA20 /* Pod */,
+				1A2A6FC4A0D21000AFBE5C31FA16FEC1 /* Resources */,
+				EA33F5E74D919CCCD7F1FD01D662E27D /* Support Files */,
+			);
+			name = TFStepProgress;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		7C36EDE32518D570389B748BC7A40423 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,55 +185,21 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				91834933FEDE41FB3FE17ACA53D90E03 /* Development Pods */,
+				C5449D54DF8229E33D1FC7935B87070F /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				5B5A218C5F2BDB086ABEE23AE9D91B2A /* Products */,
 				7C36EDE32518D570389B748BC7A40423 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		91834933FEDE41FB3FE17ACA53D90E03 /* Development Pods */ = {
+		A592577544702BC860E6B90D254EDA20 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				BAF7595FA55DD93288155C67891F124B /* TFStepProgress */,
+				D336E8CA7419F6BB0A48271605F426CA /* LICENSE */,
+				A69B6E20A912A1CAFAE4E56B1A299909 /* README.md */,
+				6835A63C4710259C271FBB123176B493 /* TFStepProgress.podspec */,
 			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		92D8D02A5E9284BF742CDB0B2BBD541B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2831F0897E550C423F03DF803134AE76 /* Info.plist */,
-				71E8CA9207105D7C9EC0CAF66AC9288E /* TFStepProgress.modulemap */,
-				B6F8884AD1F92A207599DB4B67A5355D /* TFStepProgress.xcconfig */,
-				6CFBDF581D59E15C93E123CC4EF8C5FA /* TFStepProgress-dummy.m */,
-				446DCFB8A4F9063760E417C7542CFACE /* TFStepProgress-prefix.pch */,
-				C17F6350225D0668823ED881C869CA35 /* TFStepProgress-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TFStepProgress";
-			sourceTree = "<group>";
-		};
-		9D8CE3B2D270B478687732D36526EC70 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				0A5284BEA5A88DB488CF7535DB9025AD /* images.xcassets */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		BAF7595FA55DD93288155C67891F124B /* TFStepProgress */ = {
-			isa = PBXGroup;
-			children = (
-				8413BF210F1867420488F6D0EA1EC2E4 /* Extension.swift */,
-				B06B91D0BCCD65E757072869787D0AD0 /* TFStepItemView.swift */,
-				9D4CAA8444786C5E737AF2D51D0F730E /* TFStepItemView.xib */,
-				9D80006E9B098FBC10B0382355CFCC39 /* TFStepProgress.swift */,
-				9D8CE3B2D270B478687732D36526EC70 /* Resources */,
-				92D8D02A5E9284BF742CDB0B2BBD541B /* Support Files */,
-			);
-			name = TFStepProgress;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -218,12 +210,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C5449D54DF8229E33D1FC7935B87070F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70A674EC258FE809D939F42EFDBF8C5D /* TFStepProgress */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		EA33F5E74D919CCCD7F1FD01D662E27D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3712108C0A510036A2F64A811DB40B0B /* Info.plist */,
+				A709C7E9C6894DF63390EFDB63EC3B64 /* TFStepProgress.modulemap */,
+				65742113F7A28BA0F941F3FF71158714 /* TFStepProgress.xcconfig */,
+				6B1EC7D1CEA79A71871E66A78F76DD3D /* TFStepProgress-dummy.m */,
+				55F1E721EFA4713EB16681324F75E8D3 /* TFStepProgress-prefix.pch */,
+				A15EC55A3963D4D581F768BEED05FA14 /* TFStepProgress-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TFStepProgress";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,7 +330,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -389,240 +403,59 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		62D3D08A7D31A8532786C7AB3526BCDC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0870592F32BBA34A3DAD8A4BFF7833C /* Pods-TFStepProgress_Tests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TFStepProgress_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TFStepProgress_Tests/Pods-TFStepProgress_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TFStepProgress_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+		1CDAB5613991E411E5990BAF694995C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		8E6A55CCB5631462664F37E7550D6F8F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6F8884AD1F92A207599DB4B67A5355D /* TFStepProgress.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TFStepProgress/TFStepProgress-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TFStepProgress/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TFStepProgress/TFStepProgress.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TFStepProgress;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9237B6CD63A81D28E7B6B7BCD9953396 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 800B5A6F2A6FE6B4B5DB391863100B87 /* Pods-TFStepProgress_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TFStepProgress_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TFStepProgress_Example/Pods-TFStepProgress_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TFStepProgress_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9DE98A2A401397D0C05537B24FAD6081 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CF85EF891BDC07892117466DB419881 /* Pods-TFStepProgress_Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TFStepProgress_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TFStepProgress_Example/Pods-TFStepProgress_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TFStepProgress_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -630,42 +463,7 @@
 			};
 			name = Debug;
 		};
-		C9151B4155F39C8E9D386A2049C8830A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6F8884AD1F92A207599DB4B67A5355D /* TFStepProgress.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TFStepProgress/TFStepProgress-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TFStepProgress/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TFStepProgress/TFStepProgress.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TFStepProgress;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EA7596BD11A2047F3D5BAF40C6313E6B /* Debug */ = {
+		34955946685A966B90540AEEFF7171DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FFA6D660A510454EA615028BA6417BBF /* Pods-TFStepProgress_Tests.debug.xcconfig */;
 			buildSettings = {
@@ -674,20 +472,16 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-TFStepProgress_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TFStepProgress_Tests/Pods-TFStepProgress_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -701,14 +495,234 @@
 			};
 			name = Debug;
 		};
+		62861C3E60835B8A5C2436B8BED16957 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 800B5A6F2A6FE6B4B5DB391863100B87 /* Pods-TFStepProgress_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TFStepProgress_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TFStepProgress_Example/Pods-TFStepProgress_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TFStepProgress_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6D7945791C9AB025251D495B6403F7ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65742113F7A28BA0F941F3FF71158714 /* TFStepProgress.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TFStepProgress/TFStepProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TFStepProgress/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TFStepProgress/TFStepProgress.modulemap";
+				PRODUCT_NAME = TFStepProgress;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7B62A85C412D689EF418FA67DA770A41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		80B47C34771AE0D85D529C94C40E2D30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CF85EF891BDC07892117466DB419881 /* Pods-TFStepProgress_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TFStepProgress_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TFStepProgress_Example/Pods-TFStepProgress_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TFStepProgress_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A90157C4E5BDDD63F6EFC348529529E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0870592F32BBA34A3DAD8A4BFF7833C /* Pods-TFStepProgress_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TFStepProgress_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TFStepProgress_Tests/Pods-TFStepProgress_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TFStepProgress_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C1843814C226F77EADEE8EF73C1E4A7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65742113F7A28BA0F941F3FF71158714 /* TFStepProgress.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TFStepProgress/TFStepProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TFStepProgress/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TFStepProgress/TFStepProgress.modulemap";
+				PRODUCT_NAME = TFStepProgress;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		06233B9760977302D70C2D972AC963ED /* Build configuration list for PBXNativeTarget "Pods-TFStepProgress_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EA7596BD11A2047F3D5BAF40C6313E6B /* Debug */,
-				62D3D08A7D31A8532786C7AB3526BCDC /* Release */,
+				34955946685A966B90540AEEFF7171DD /* Debug */,
+				A90157C4E5BDDD63F6EFC348529529E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -716,8 +730,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */,
-				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+				1CDAB5613991E411E5990BAF694995C5 /* Debug */,
+				7B62A85C412D689EF418FA67DA770A41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -725,8 +739,8 @@
 		58E471D45C1C9C30853E646708246426 /* Build configuration list for PBXNativeTarget "Pods-TFStepProgress_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9DE98A2A401397D0C05537B24FAD6081 /* Debug */,
-				9237B6CD63A81D28E7B6B7BCD9953396 /* Release */,
+				80B47C34771AE0D85D529C94C40E2D30 /* Debug */,
+				62861C3E60835B8A5C2436B8BED16957 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -734,8 +748,8 @@
 		D9708C331B56037D70880C2C5B714B05 /* Build configuration list for PBXNativeTarget "TFStepProgress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C9151B4155F39C8E9D386A2049C8830A /* Debug */,
-				8E6A55CCB5631462664F37E7550D6F8F /* Release */,
+				6D7945791C9AB025251D495B6403F7ED /* Debug */,
+				C1843814C226F77EADEE8EF73C1E4A7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
