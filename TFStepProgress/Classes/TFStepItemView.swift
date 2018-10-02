@@ -79,8 +79,8 @@ class TFStepItemView: UIView {
         let view = viewFromNibForClass()
         view.frame = bounds
         view.autoresizingMask = [
-            UIViewAutoresizing.flexibleWidth,
-            UIViewAutoresizing.flexibleHeight
+            UIView.AutoresizingMask.flexibleWidth,
+            UIView.AutoresizingMask.flexibleHeight
         ]
         self.circleView.layer.borderWidth = circleBorder
         addSubview(view)

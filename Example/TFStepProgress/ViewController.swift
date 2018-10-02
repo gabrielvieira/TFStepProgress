@@ -22,7 +22,11 @@ class ViewController: UIViewController {
         let item1 = TFStepItemConfig.init(colorConfig: TFStepItemColorConfig(), title: "Solicitação", number: 0)
         let item2 = TFStepItemConfig.init(colorConfig: TFStepItemColorConfig(), title: "Aprovação", number: 1)
         let item3 = TFStepItemConfig.init(colorConfig: TFStepItemColorConfig(), title: "Conclusão", number: 2)
-        self.step?.setupItems(items: [item1,item2,item3])
+         let item4 = TFStepItemConfig.init(colorConfig: TFStepItemColorConfig(), title: "Conclusão", number: 3)
+         let item5 = TFStepItemConfig.init(colorConfig: TFStepItemColorConfig(), title: "Conclusão", number: 4)
+         let item6 = TFStepItemConfig.init(colorConfig: TFStepItemColorConfig(), title: "Conclusão", number: 5)
+         let item7 = TFStepItemConfig.init(colorConfig: TFStepItemColorConfig(), title: "Conclusão", number: 6)
+        self.step?.setupItems(items: [item1,item2,item3, item4, item5, item6, item7])
         self.view.addSubview(self.step!)
         // Do any additional setup after loading the view, typically from a nib.
     }

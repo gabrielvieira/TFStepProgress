@@ -161,7 +161,7 @@ public class TFStepProgress: UIView {
         var continueSearch = true
         var x = 100
         while continueSearch {
-            let sum = items.flatMap {$0.title.count}.reduce(0, +)
+            let sum = items.compactMap {$0.title.count}.reduce(0, +)
             if (sum * x) > (Int(self.frame.width * 0.8)/items.count) && x > Int(maxHeight * 0.8) {
                 x-=1
             } else {
